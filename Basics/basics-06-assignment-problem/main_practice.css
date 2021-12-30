@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+}
+
+ol {
+    font-family: inherit;
+}
+
+#assignment-instructions {
+    color: blue;
+}
+
+ol > li code {
+    font-family: monospace;
+    color: red;
+}
+
+.second {
+    color: green;
+}
+
+/* applies to all other li tags but the first li tag */
+/* applies to all li tags ADJACENT to the first li tag */
+li + li {
+    color: white;
+    background: black;
+}

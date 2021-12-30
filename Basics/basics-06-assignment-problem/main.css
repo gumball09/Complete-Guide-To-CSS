@@ -1,0 +1,62 @@
+/* Q5 */
+body {
+    font-family: sans-serif;
+}
+
+/* Q1 */
+[id] {
+    color: pink;
+}
+
+#assignment-instructions {
+    color: pink;
+}
+
+h1 {
+    color: pink;
+}
+
+/* Q2 */
+/* use of descendants */
+ol code {
+    font-family: monospace;
+    color: red;
+}
+
+/* use of direct childs */
+ol > li > code {
+    font-family: monospace;
+    color: red;
+}
+
+/* use of descendants */
+li code {
+    font-family: monospace;
+    color: red;
+}
+
+/* Q3 */
+/* use of class */
+.second {
+    color: green;
+}
+
+/* use of attribute selector */
+[class] {
+    color: green;
+}
+
+/* Q6 */
+/* use of adjacent siblings */
+/* the second tag must come RIGHT AFTER the first tag */
+li + li {
+    color: white;
+    background: black;
+}
+
+/* Q7 */
+/* use of descendants */
+ol li {
+    color: white;
+    background: black;
+}
