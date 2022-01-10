@@ -1,0 +1,91 @@
+/* MY CODE */
+/* .header, .sidebar, .content, .footer {
+    background: gray;
+    padding: 30px;
+    margin: 10px;
+}
+
+.sidebar, .content {
+    height: 150px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100px 150px 80px;
+}
+
+.header {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.footer {
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+} */
+
+/* SOLUTION */
+header {
+    background: blue;
+    color: white;
+
+    grid-column-start: col-1-start;
+    grid-column-end: -1; /* or col-2-end */
+}
+ 
+main {
+    background: red;
+    color: white;
+
+    grid-column-start: col-2-start;
+    grid-column-end: span 1;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+}
+
+aside {
+    background: green; 
+    color: white;
+
+    grid-column-start: col-1-start;
+    grid-row-start: 2;
+    grid-row-end: 3; /* or span 1 */
+}
+
+footer {
+    background: purple;
+    color: white;
+
+    grid-column-start: col-1-start;
+    grid-column-end: col-2-end;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 20px;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: [col-1-start] 1fr [col-1-end col-2-start] 3fr [col-2-end];
+    grid-template-rows: 4.5rem auto 4.5rem;
+}
